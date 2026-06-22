@@ -1,0 +1,13 @@
+# Configuration du déploiement Netlify.
+# Ce fichier indique à Netlify où trouver le site et les fonctions —
+# vous n'avez rien à modifier ici.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
